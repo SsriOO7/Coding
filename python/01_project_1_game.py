@@ -23,7 +23,7 @@ def game_win(comp,you):
         elif you=="p":
             return False
 
-print ("computer turn: Rock(s),Paper(p),Scissor(s)")
+print ("computer turn: Rock(r),Paper(p),Scissor(s)")
 ran=random.randint(1,3)
 
 if ran==1:
@@ -33,7 +33,7 @@ elif ran==2:
 elif ran==3:
     comp="s"
 
-you=input("Your turn: Rock(s),Paper(p),Scissor(s)\t")
+you=input("Your turn: Rock(r),Paper(p),Scissor(s)\t")
 a=game_win(comp,you)
 
 print(f"Computer choose {comp}")
